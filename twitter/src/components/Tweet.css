@@ -1,0 +1,18 @@
+.tweet {
+    padding: 10px;
+    border-bottom: 1px solid #e1e8ed;
+    text-align: left;
+  }
+  
+  .tweetStatus {
+    font-weight: bold;
+  }
+  
+  .disaster {
+    color: red;
+  }
+  
+  .notDisaster {
+    color: green;
+  }
+  

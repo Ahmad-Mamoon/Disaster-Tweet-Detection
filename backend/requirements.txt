@@ -1,0 +1,5 @@
+# backend/requirements.txt
+Flask
+joblib
+nltk
+flask-cors

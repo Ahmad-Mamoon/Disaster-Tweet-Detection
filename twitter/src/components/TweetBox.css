@@ -1,0 +1,27 @@
+.tweetBox {
+    padding: 20px;
+    border-bottom: 1px solid #e1e8ed;
+  }
+  
+  .tweetBox textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e1e8ed;
+    border-radius: 4px;
+    resize: none;
+  }
+  
+  .tweetBox button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #1da1f2;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .tweetBox button:hover {
+    background-color: #0d8ded;
+  }
+  
