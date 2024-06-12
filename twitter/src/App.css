@@ -1,10 +1,53 @@
 .app {
-  text-align: center;
-  max-width: 600px;
+  display: flex;
+  max-width: 1300px;
   margin: 0 auto;
-  font-family: Arial, sans-serif;
 }
 
-h1 {
-  color: #1da1f2;
+.main {
+  flex: 2;
+  border-left: 1px solid #e1e8ed;
+  border-right: 1px solid #e1e8ed;
+}
+
+.app__header {
+  position: sticky;
+  display: flex;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  padding: 0;
+  line-height: 1;
+  border-bottom: 1px solid #e1e8ed;
+}
+
+.app__header h2 {
+  font-size: 20px;
+  margin: 15px;
+  font-weight: 700;
+  margin-right: 10px;
+  width: 85%;
+}
+
+.app__header img {
+  height: max-content;
+  width: auto;
+  margin-left: 10px;
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .main {
+    border-left: none;
+    border-right: none;
+  }
+
+  .twitter__sidebar,
+  .right-sidebar {
+    display: none;
+  }
 }

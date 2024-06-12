@@ -1,9 +1,11 @@
-// frontend/src/App.js
 import React, { useState } from 'react';
 import axios from 'axios';
 import TweetBox from './components/TweetBox';
 import TweetList from './components/TweetList';
+import Sidebar from './components/sidebar/Sidebar';
+import RightSidebar from './components/rightsidebar/RightSidebar';
 import './App.css';
+import vector from './assests/Vector.png';
 
 function App() {
   const [tweets, setTweets] = useState([]);
@@ -24,9 +26,16 @@ function App() {
 
   return (
     <div className="app">
-      <h1>Twitter Clone</h1>
-      <TweetBox addTweet={addTweet} />
-      <TweetList tweets={tweets} />
+      <Sidebar />
+      <div className="main">
+        <div className="app__header">
+          <h2>Home</h2>
+          <img src={vector} alt="vector"/>
+        </div>
+        <TweetBox addTweet={addTweet} />
+        <TweetList tweets={tweets} />
+      </div>
+      <RightSidebar />
     </div>
   );
 }
