@@ -2,7 +2,6 @@
 
 Welcome to the Twitter Clone project! This application allows users to post tweets, and uses an AI model to predict whether a tweet is about a real disaster or not. The project is built with a React frontend and a Flask backend.
 
-![Twitter Clone Screenshot](screenshot.png)
 
 ## Table of Contents
 
